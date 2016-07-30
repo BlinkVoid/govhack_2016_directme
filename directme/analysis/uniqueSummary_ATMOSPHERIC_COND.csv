@@ -1,0 +1,6 @@
+,0,1
+ACCIDENT_NO,144078,more than 100
+ATMOSPH_COND,8,[1 9 5 7 2 6 4 3]
+ATMOSPH_COND_SEQ,5,[1 0 2 3 4]
+Atmosph Cond Desc,8,"['Clear' 'Not known' 'Smoke' 'Strong winds' 'Raining' 'Dust' 'Fog'
+ 'Snowing']"

@@ -1,0 +1,5 @@
+,0,1
+ACCIDENT_NO,144078,more than 100
+SURFACE_COND,6,[1 2 9 3 5 4]
+Surface Cond Desc,6,['Dry' 'Wet' 'Unknown' 'Muddy' 'Icy' 'Snowy']
+SURFACE_COND_SEQ,4,[1 0 2 3]

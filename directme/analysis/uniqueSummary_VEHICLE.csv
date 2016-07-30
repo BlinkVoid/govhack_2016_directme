@@ -1,0 +1,73 @@
+,0,1
+ACCIDENT_NO,144078,more than 100
+VEHICLE_ID,19,"['A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'J' 'K' 'L' 'M' 'N' 'O' 'P' 'Q' 'R'
+ 'S']"
+VEHICLE_YEAR_MANUF,97,"[ 1996.  2003.  2001.  1998.  1991.  1995.  1997.  2004.  1986.  1992.
+  1993.  2000.  1989.  1977.  2005.    nan  2002.  1976.  1988.  1990.
+  1982.  1984.  1980.  1985.  1978.  1999.  1979.  1994.  1981.  1987.
+  2006.  1973.  1983.  1970.  1971.  1974.  1969.  1965.  1962.     4.
+  1905.  1955.  1967.  1975.  1934.  1961.  1964.  1972.     0.  1968.
+  1966.  1957.  1959.  1900.  1952.  1956.  1960.  1940.  1936.  2007.
+  1954.  1951.  1958.  1904.  1963.  1930.  2008.  1800.  1949.  1937.
+  1928.  1950.  1933.  1922.  1932.  1941.  1948.  2009.  2010.  1911.
+  2011.  1929.  1939.  1927.  2012.  1926.  1938.  1909.  2013.  2014.
+  1935.  1918.  1923.  2015.  3001.  1913.  2016.]"
+VEHICLE_DCA_CODE,9,[2 1 8 '8' '1' '2' '3' ' ' 3]
+INITIAL_DIRECTION,9,['SW' 'NW' 'S ' 'N ' 'E ' 'W ' 'SE' 'NE' 'NK']
+ROAD_SURFACE_TYPE,4,[1 2 3 9]
+Road Surface Type Desc,4,['Paved' 'Unpaved' 'Gravel' 'Unknown']
+REG_STATE,12,['V' ' ' 'Q' 'N' 'S' 'Z' 'T' 'A' 'W' 'D' 'O' 'B']
+VEHICLE_BODY_STYLE,131,more than 100
+VEHICLE_MAKE,443,more than 100
+VEHICLE_MODEL,11443,more than 100
+VEHICLE_POWER,2,[ nan   0.]
+VEHICLE_TYPE,28,"[ 1  3  4 10 71  5  2  6 72 13 17  7 12  8 99  9 11 15 60 16 18 61 14 62 63
+ 20 27 19]"
+Vehicle Type Desc,28,"['Car' 'Taxi' 'Utility' 'Motor Cycle'
+ 'Light Commercial Vehicle (Rigid) <= 4.5 Tonnes GVM' 'Panel Van'
+ 'Station Wagon' 'Prime Mover (No of Trailers Unknown)'
+ 'Heavy Vehicle (Rigid) > 4.5 Tonnes' 'Bicycle' 'Other Vehicle'
+ 'Rigid Truck(Weight Unknown)' 'Motor Scooter' 'Bus/Coach' 'Unknown'
+ 'Mini Bus(9-13 seats)' 'Moped' 'Tram' 'Prime Mover Only' 'Train'
+ 'Not Applicable' 'Prime Mover - Single Trailer' 'Horse (ridden or drawn)'
+ 'Prime Mover B-Double' 'Prime Mover B-Triple' 'Quad Bike'
+ 'Plant machinery and Agricultural equipment' 'Parked trailers']"
+VEHICLE_WEIGHT,1132,more than 100
+CONSTRUCTION_TYPE,4,[' ' 'R' 'P' 'A']
+FUEL_TYPE,10,['Z' ' ' 'P' 'M' 'D' 'G' 'O' 'E' 'S' 'R']
+NO_OF_WHEELS,19,"[ nan   4.   0.  10.  12.   2.   6.   8.   5.  22.   1.   3.  61.  16.  41.
+  11.  44.   7.  46.]"
+NO_OF_CYLINDERS,26,"[ nan   6.   4.   0.   8.   5.   2.   3.   1.  12.  46.  65.  14.  66.  40.
+  11.   7.  10.  64.  22.  44.  60.  41.  63.  88.  93.]"
+SEATING_CAPACITY,66,"[ nan   5.   8.   0.   4.   2.   3.   7.   1.   6.  65.  22.  49.  14.  12.
+  13.  41.  45.  58.  44.  11.  46.  43.  42.  50.  51.  54.  10.  26.  19.
+   9.  36.  15.  40.  39.  48.  17.  25.  38.  59.  62.  23.  55.  52.  21.
+  47.  60.  31.  35.  18.  70.  37.  53.  20.  30.  57.  29.  67.  28.  27.
+  61.  34.  16.  33.  64.  24.]"
+TARE_WEIGHT,3345,more than 100
+TOTAL_NO_OCCUPANTS,40,"[  2.   1.   3.   0.   4.   5.  nan   6.  12.   7.  11.   9.  13.  20.  47.
+  40.   8.  14.  21.  35.  16.  18.  48.  37.  30.  15.  17.  66.  44.  19.
+  27.  34.  10.  32.  96.  33.  22.  25.  28.  88.]"
+CARRY_CAPACITY,3154,more than 100
+CUBIC_CAPACITY,427,more than 100
+FINAL_DIRECTION,9,['SW' 'NE' 'NW' 'S ' 'E ' 'W ' 'N ' 'SE' 'NK']
+DRIVER_INTENT,20,[ 1  2 17  3  5 10 11  7  6 99 15 14  9 18  8  4 13 16 12 19]
+VEHICLE_MOVEMENT,41,"[1 2 17 15 3 18 5 10 16 11 8 6 99 12 7 14 9 19 4 13 '01' '99' '18' '06'
+ '14' '02' '15' '11' '17' '04' '03' '10' '07' '09' '08' '16' '05' '19' '13'
+ '12' '  ']"
+TRAILER_TYPE,13,['H' 'B' 'A' 'G' 'C' 'E' 'F' 'D' ' ' 'I' 'J' 'L' 'K']
+VEHICLE_COLOUR_1,18,"['MRN' 'BLU' 'YLW' 'GRY' 'BLK' 'WHI' 'RED' 'SIL' 'GRN' 'ZZ ' 'BRN' 'PUR'
+ 'GLD' 'CRM' 'OGE' 'PNK' 'FWN' 'MVE']"
+VEHICLE_COLOUR_2,18,"['ZZ ' 'SIL' 'PUR' 'BLK' 'WHI' 'BLU' 'RED' 'GRY' 'GRN' 'OGE' 'GLD' 'BRN'
+ 'YLW' 'FWN' 'MRN' 'CRM' 'PNK' '   ']"
+CAUGHT_FIRE,4,[2 0 9 1]
+INITIAL_IMPACT,17,['F' '2' '9' 'R' '3' '1' '5' '8' '4' '6' 'N' '7' '0' 'U' 'S' 'T' ' ']
+LAMPS,4,[2 0 1 9]
+LEVEL_OF_DAMAGE,7,[3 2 5 6 1 4 9]
+OWNER_POSTCODE,1849,more than 100
+TOWED_AWAY_FLAG,3,[1 2 9]
+TRAFFIC_CONTROL,17,[ 1  0 11  9 99  5 10 15  4  3 14  2  6 13 12  8  7]
+Traffic Control Desc,17,"['Stop-go lights' 'No control' 'Giveway sign' 'Roundabout' 'Unknown'
+ 'Ped. crossing' 'Stop sign' 'Other' 'Ped. lights' 'Out of order' 'Police'
+ 'Flashing lights' 'RX Gates/Booms' 'School No flags' 'School Flags'
+ 'RX No control' 'RX Bells/Lights']"

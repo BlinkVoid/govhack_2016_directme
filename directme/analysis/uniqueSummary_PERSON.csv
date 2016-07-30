@@ -1,0 +1,20 @@
+,0,1
+ACCIDENT_NO,144078,more than 100
+PERSON_ID,111,more than 100
+VEHICLE_ID,17,['A' 'C' 'B' ' ' 'D' 'E' 'F' 'G' 'H' 'I' 'J' 'K' 'L' 'M' 'N' 'O' 'P']
+SEX,3,['F' 'M' 'U']
+AGE,109,more than 100
+Age Group,14,"['unknown' '40-49' '22-25' '70+' '60-64' '30-39' '17-21' '50-59' '26-29'
+ '16-17' '13-15' '5-12' '0-4' '64-69']"
+INJ_LEVEL,4,[4 3 2 1]
+Inj Level Desc,4,['Not injured' 'Other injury' 'Serious injury' 'Fatality']
+SEATING_POSITION,11,['LF' 'LR' 'D ' 'CR' 'RR' 'PL' nan 'CF' 'NK' 'OR' 'PS']
+HELMET_BELT_WORN,9,[1 9 6 8 3 7 2 5 4]
+ROAD_USER_TYPE,19,[3 2 5 4 1 6 9 7 8 '2 ' '3 ' '4 ' '1 ' '5 ' '6 ' '9 ' '8 ' '7 ' '  ']
+Road User Type Desc,7,"['Passengers' 'Drivers' 'Pillion Passengers' 'Motorcyclists' 'Pedestrians'
+ 'Bicyclists' 'Unknown']"
+LICENCE_STATE,12,[' ' 'V' 'Z' 'A' 'Q' 'O' 'S' 'N' 'W' 'D' 'T' 'B']
+PEDEST_MOVEMENT,21,[0 2 3 1 7 8 4 6 9 5 '0' '1' '7' '9' '3' '2' '6' '8' '4' '5' ' ']
+POSTCODE,1839,more than 100
+TAKEN_HOSPITAL,3,[' ' 'N' 'Y']
+EJECTED_CODE,6,['0' '1' '3' '2' ' ' '9']

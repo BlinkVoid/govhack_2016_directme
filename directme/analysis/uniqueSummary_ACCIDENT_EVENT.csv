@@ -1,0 +1,38 @@
+,0,1
+ACCIDENT_NO,144078,more than 100
+EVENT_SEQ_NO,20,[ 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20]
+EVENT_TYPE,9,['C' '2' '3' '6' '1' '5' '8' '4' '9']
+Event Type Desc,9,"['Collision' 'Fell from vehicle' 'Ran off carriageway' 'Fell in vehicle'
+ 'Rollover on/off carriageway' 'Struck by stone/projectile/load' 'Other'
+ 'Mechanical failure' 'Not known']"
+VEHICLE_1_ID,15,['B' 'A' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'J' 'K' 'L' 'M' 'P' 'N']
+VEHICLE_1_COLL_PT,16,['2' 'F' '9' '1' '5' '8' '4' '6' 'T' '7' 'R' '3' '0' 'U' 'N' 'S']
+Vehicle 1 Coll Pt Desc,16,"['Right side (forwards)' 'Front' 'Not known or Not Applicable'
+ 'Right front corner' 'Left front corner' 'Left rear corner'
+ 'Right rear corner' 'Left side (forwards)' 'Top/Roof'
+ 'Left side (rearwards)' 'Rear' 'Right side (rearwards)' 'Towed unit'
+ 'Undercarriage' 'None' 'Sidecar']"
+VEHICLE_2_ID,20,"['A' ' ' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'J' 'K' 'L' 'M' 'N' 'O' 'P' 'Q'
+ 'R' 'S']"
+VEHICLE_2_COLL_PT,17,['F' '9' ' ' 'R' '3' '1' '6' '2' '5' '8' '7' '4' '0' 'U' 'S' 'N' 'T']
+Vehicle 2 Coll Pt Desc,17,"['Front' 'Not known or Not Applicable' ' ' 'Rear' 'Right side (rearwards)'
+ 'Right front corner' 'Left side (forwards)' 'Right side (forwards)'
+ 'Left front corner' 'Left rear corner' 'Left side (rearwards)'
+ 'Right rear corner' 'Towed unit' 'Undercarriage' 'Sidecar' 'None'
+ 'Top/Roof']"
+PERSON_ID,19,"['  ' '01' '02' '03' '04' '05' '06' '07' '08' '09' '10' '11' '12' '13' 'A '
+ '2 ' 'B ' 'C ' 'D ']"
+OBJECT_TYPE,29,"[99  2  7 10  3  4  1  9 32  6 12 36 14 34 17 24 37 38  5 21 39  8 31 13 33
+ 23 30 11 35]"
+Object Type Desc,29,"['Not Applicable' 'Tree (shrub/scrub)' 'Guard Rail'
+ 'Other Fixed (railway furniture/culvert/telephone box etc)'
+ 'Fence/Wall (including gates)' 'Embankment' 'Pole (telphone/electricity)'
+ 'Building' 'Cattle (includes steer/beasts/cows)'
+ 'Traffic sign (no parking/no standing)' 'Traffic signal(traffic lights)'
+ 'Kangaroo (include wallaby)' 'Barrier (road closure)' 'Horse (not ridden)'
+ 'Traffic island' 'Safety zone (eg. tram safety zone)' 'Wombat'
+ 'Wild animal (include birds)' 'Guide post (including Km post)'
+ 'Bridge (on path - see 13)' 'Unknown Animal' 'Fire Hydrant'
+ 'Tame animal (cats and dogs etc)' 'Bridge (off path)' 'Sheep'
+ 'Roadworks (dirt/sign/barrier/excavation)' 'Kerb (if it is protruding)'
+ 'Not Known' 'Other tame animals']"
