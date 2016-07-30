@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="static/stylesheets/index.css">
     <script src="static/js/jquery-3.1.0.min.js"></script>
     <script src="static/js/semantic.js"></script>
+    <script src="static/js/index.js"></script>
+
+    <script>
+      function getStarted() {
+        $('html, body').animate({ scrollTop: $('#location').offset().top }, 'slow');
+        setTimeout(function () {
+           $('#locationstart').focus();
+        }, 100);
+        return false;
+      } 
+    </script>
   </head>
 
   <body>
@@ -26,7 +37,7 @@
                 DirectMe
               </h1>
               <h2>Helping to analyse your daily routes</h2>
-              <div class="ui huge primary button" id="getstarted">Get Started</i></div>
+              <button class="ui huge primary button" id="getstarted" onclick="getStarted()">Get Started</i></button>
           </div>
         </div>
       </div>
@@ -36,11 +47,11 @@
 
       <div class="ui form" id="location">
         <div class="ui massive icon input">
-          <input type="text" placeholder="Start Location">
+          <input type="text" id="locationstart" placeholder="Start Location">
         </div>
         <br/><br/>
         <div class="ui massive icon input">
-          <input type="text" placeholder="Destination">
+          <input type="text" id="locationend" placeholder="Destination">
         </div>
 
         <div class="ui center aligned grid" id="optionslist">
@@ -89,5 +100,8 @@
         </div>
       </div>
     </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOx8RIyKYBCHnrmFBTkzcQ3TaN1E0UhjY&signed_in=true&libraries=places&callback=initGoogleMaps"
+        async defer></script>
   </body>
 </html>
