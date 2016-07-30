@@ -96,6 +96,33 @@
           font-size: 1.5em;
         }
       }
+
+      #introheader { 
+        position:relative; 
+        top: 0px;
+      }
+      #introheader video {
+        position:relative;
+        margin: 0;
+        z-index:0;
+        width: 100%;
+        top: -14px;
+        margin-bottom: -30px;
+      }
+      #overlay {
+        position:absolute;
+        top:0;
+        left:0;
+        right: 0;
+        z-index:1;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #useraccount {
+        padding:10px;
+        float: right;
+      }
     </style>
 
   </head>
@@ -131,30 +158,22 @@
 
     <!-- Page Contents -->
     <div class="pusher">
-      <div class="ui inverted vertical masthead center aligned segment">
-        <div class="ui container">
-          <div class="ui large secondary inverted pointing menu">
-            <a class="toc item">
-              <i class="sidebar icon"></i>
-            </a>
-            <a class="active item">Home</a>
-            <a class="item">Work</a>
-            <a class="item">Company</a>
-            <a class="item">Careers</a>
-            <div class="right item">
-              <a class="ui inverted button">Log in</a>
-              <a class="ui inverted button">Sign Up</a>
-            </div>
+      <div class="ui inverted vertical masthead center aligned segment" id="introheader">
+        <video src="http://www.piedpiper.com/app/themes/pied-piper/dist/images/video-bg.mp4" autoplay="" loop=""></video>
+        <div class="ui container center aligned" id="overlay">
+          <div class="right item" id="useraccount">
+            <a class="ui inverted button">Log in</a>
+            <a class="ui inverted button">Sign Up</a>
+          </div>
+          <div class="ui text container">
+              <h1 class="ui inverted header">
+                DirectMe
+              </h1>
+              <h2>Do whatever you want when you want to.</h2>
+              <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
           </div>
         </div>
 
-        <div class="ui text container">
-          <h1 class="ui inverted header">
-            Imagine-a-Company
-          </h1>
-          <h2>Do whatever you want when you want to.</h2>
-          <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
-        </div>
       </div>
 
       <div class="ui vertical stripe segment">
