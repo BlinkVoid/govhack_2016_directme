@@ -130,8 +130,6 @@
   text-align: center;
 }
 
-.inline.fields {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+#optionslist {
+  padding-top: 50px;
 }
