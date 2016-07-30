@@ -108,3 +108,17 @@
     padding:10px;
     float: right;
 }
+
+#location {
+  text-align: center;
+}
+
+.inline.fields {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
