@@ -2,11 +2,11 @@
 <html>
 
   <head>
-    <title>Python Flask Starter Application</title>
+    <title>DirectMe</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="static/stylesheets/styles.css">
+    <link rel="stylesheet" href="static/stylesheets/index.css">
   </head>
 
   <body>
@@ -19,88 +19,5 @@
           <p>Thanks for creating a
             <span class = "blue">Python <a href = "http://flask.pocoo.org/">Flask</a> Starter Application</span>.
     </table>
-
-    <div id="floating-panel">
-      <strong>Start:</strong>
-      <select id="start">
-        <option value="chicago, il">Chicago</option>
-        <option value="st louis, mo">St Louis</option>
-        <option value="joplin, mo">Joplin, MO</option>
-        <option value="oklahoma city, ok">Oklahoma City</option>
-        <option value="amarillo, tx">Amarillo</option>
-        <option value="gallup, nm">Gallup, NM</option>
-        <option value="flagstaff, az">Flagstaff, AZ</option>
-        <option value="winona, az">Winona</option>
-        <option value="kingman, az">Kingman</option>
-        <option value="barstow, ca">Barstow</option>
-        <option value="san bernardino, ca">San Bernardino</option>
-        <option value="los angeles, ca">Los Angeles</option>
-      </select>
-      <br>
-      <strong>End:</strong>
-      <select id="end">
-        <option value="chicago, il">Chicago</option>
-        <option value="st louis, mo">St Louis</option>
-        <option value="joplin, mo">Joplin, MO</option>
-        <option value="oklahoma city, ok">Oklahoma City</option>
-        <option value="amarillo, tx">Amarillo</option>
-        <option value="gallup, nm">Gallup, NM</option>
-        <option value="flagstaff, az">Flagstaff, AZ</option>
-        <option value="winona, az">Winona</option>
-        <option value="kingman, az">Kingman</option>
-        <option value="barstow, ca">Barstow</option>
-        <option value="san bernardino, ca">San Bernardino</option>
-        <option value="los angeles, ca">Los Angeles</option>
-      </select>
-    </div>
-    <div id="right-panel"></div>
-    <div id="map"></div>
-    <script>
-      var directionsDisplay;
-      var directionsService;
-
-      function initMap() {
-        directionsDisplay = new google.maps.DirectionsRenderer;
-        directionsService = new google.maps.DirectionsService;
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 7,
-          center: {lat: 41.85, lng: -87.65}
-        });
-        directionsDisplay.setMap(map);
-        directionsDisplay.setPanel(document.getElementById('right-panel'));
-
-        var control = document.getElementById('floating-panel');
-        control.style.display = 'block';
-        map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
-
-        var onChangeHandler = function() {
-          var start = document.getElementById('start').value;
-          var end = document.getElementById('end').value;
-          getRoutesFromAddresses(start, end);
-        };
-        document.getElementById('start').addEventListener('change', onChangeHandler);
-        document.getElementById('end').addEventListener('change', onChangeHandler);
-      }
-
-      function getRoutesFromAddresses(start, end) {
-        directionsService.route({
-          origin: start,
-          destination: end,
-          travelMode: 'DRIVING',
-          provideRouteAlternatives: true
-        }, function(response, status) {
-          if (status === 'OK') {
-            //alert("lat: " + response.routes[0].legs[0].steps[0].start_location.lat() + ", lng:" + response.routes[0].legs[0].steps[0].start_location.lng());
-            directionsDisplay.setDirections(response);
-            return response;
-          } else {
-            window.alert('Directions request failed due to ' + status);
-          }
-        });
-      }
-    </script>
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOx8RIyKYBCHnrmFBTkzcQ3TaN1E0UhjY&callback=initMap">
-    </script>
   </body>
 </html>

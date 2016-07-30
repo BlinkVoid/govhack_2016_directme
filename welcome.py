@@ -25,6 +25,10 @@ def Welcome():
 def WelcomeToMyapp():
     return 'Welcome again to my app running on Bluemix!'
 
+@app.route('/map')
+def map():
+    return app.send_static_file('map.html')
+
 @app.route('/api/people')
 def GetPeople():
     list = [
