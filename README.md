@@ -1,2 +1,5 @@
-# govhack_directme
-Find your desirable path based on Weather, Hazards and Safety data
+# DirectMe
+Find the most desirable path based on Weather, Hazards and Safety data
+
+
+**Created @ GovHack 2016**
