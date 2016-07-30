@@ -125,3 +125,13 @@
     padding-left: 5px;
     padding-right: 5px;
 }
+
+#location {
+  text-align: center;
+}
+
+.inline.fields {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
