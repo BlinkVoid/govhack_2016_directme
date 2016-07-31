@@ -105,31 +105,36 @@
 }
 
 #useraccount {
-    padding:10px;
-    float: right;
+  padding:10px;
+  float: right;
 }
 
 #getstarted {
-    margin-top: 150px;
+  margin-top: 150px;
 }
 
 #developers {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 #developers li {
-    float: left;
-    padding-left: 5px;
-    padding-right: 5px;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #location {
   text-align: center;
+  padding-top: 225px;
+  padding-bottom: 225px;
 }
 
 #optionslist {
+  margin: auto;
+  text-align: left;
+  width: 300px;
   padding-top: 50px;
 }

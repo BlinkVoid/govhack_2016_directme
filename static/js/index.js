@@ -1,3 +1,11 @@
+function init() {
+    // Init checkboxes
+    $('.ui.checkbox')
+    .checkbox();
+}
+
+window.onload=init;
+
 function initGoogleMaps() {
     autocompleteLocations();
 }
