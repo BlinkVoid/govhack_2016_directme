@@ -32,16 +32,14 @@ def my_form_post():
 
     start = request.form['locationstart']
     end = request.form['locationend']
-    list = [start,end]
-    return jsonify(results=list)
+    start_and_end = [start,end]
+    return render_template('map.html',start_pos=start,end_pos=end)
 
 @app.route('/myapp')
 def WelcomeToMyapp():
     return 'Welcome again to my app running on Bluemix!'
 
-@app.route('/map')
-def map():
-    return app.send_static_file('map.html')
+
 
 @app.route('/api/people')
 def GetPeople():
