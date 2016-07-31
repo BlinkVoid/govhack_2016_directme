@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="static/stylesheets/map.css">
+    <link rel="stylesheet" href="static/stylesheets/semantic.css">
+    <link rel="stylesheet" href="static/stylesheets/index.css">
+    <script src="static/js/jquery-3.1.0.min.js"></script>
+    <script src="static/js/semantic.js"></script>
   </head>
 
   <body>
@@ -19,6 +23,9 @@
 
       var start_pos = {{start_pos|tojson}};
       var end_pos = {{end_pos|tojson}};
+      var surface = {{ surface|tojson}};
+      var injury = {{ injury|tojson }};
+      var atmospheric = {{atmospheric|tojson}};
       var directionsDisplay;
       var directionsService;
 
@@ -63,5 +70,8 @@
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOx8RIyKYBCHnrmFBTkzcQ3TaN1E0UhjY&callback=initMap">
     </script>
+
+
+
   </body>
 </html>

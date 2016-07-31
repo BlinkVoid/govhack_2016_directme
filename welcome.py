@@ -33,7 +33,11 @@ def my_form_post():
     start = request.form['locationstart']
     end = request.form['locationend']
     start_and_end = [start,end]
-    return render_template('map.html',start_pos=start,end_pos=end)
+    surface_toggle = request.form.getlist('surface')
+    injury_toggle = request.form.getlist('injury')
+    atmospheric_toggle = request.form.getlist('atmospheric')
+    return render_template('map.html',start_pos=start,end_pos=end,
+    surface=surface_toggle, injury=injury_toggle, atmospheric=atmospheric_toggle)
 
 @app.route('/myapp')
 def WelcomeToMyapp():
