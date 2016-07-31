@@ -106,6 +106,23 @@ def getDetailDF(df1, df2, key, query): #df1 = inrangedf, df2 = which ever data w
     return (tempdf, tempdf2)
 
 
+def get_long_lat(start,end,):
+    pointA = LOC(start[0],start[1])
+    pointB = LOC(end[0],end[1])
+
+    inrangedf = getNodes(pointA,pointB)
+    long_coords = pd.Series.tolist(inrangedf['Long'])
+    lat_coords = pd.Series.tolist(inrangedf['Lat'])
+
+    long_lat_coords = []
+    n = 0
+    while n < len(long_coords):
+        long_lat_coords.append((lat_coords[n],long_coords[n]))
+        n += 1
+
+    return long_lat_coords
+
+
 # In[ ]:
 
 #for age: PERSON.csv
@@ -122,31 +139,34 @@ nodedf = pd.read_csv("NODE.csv")
 # In[46]:
 
 #tie everything together
-pointA = LOC(-37.800793, 144.8803823)
-pointB = LOC(-37.8622120,144.8831790)
+pointA = (-37.800793, 144.8803823)
+pointB = (-37.8622120,144.8831790)
 #===========
-inrangedf = getNodes(pointA, pointB) #the function assume the lat is in negative values. 
+ #the function assume the lat is in negative values. 
+#[print pd.Series.tolist(inrangedf['Lat'])
+print get_long_lat(pointA,pointB)
+
 #injury distribution
-injuries1, injuries_pct = getDetailDF(inrangedf, persondf, "ACCIDENT_NO", "INJ_LEVEL")
+#injuries1, injuries_pct = getDetailDF(inrangedf, persondf, "ACCIDENT_NO", "INJ_LEVEL")
 #age distribution
-ages, ages_pct = getDetailDF(inrangedf, persondf, "ACCIDENT_NO", "AGE")
-plotBarChart(ages)
+#ages, ages_pct = getDetailDF(inrangedf, persondf, "ACCIDENT_NO", "AGE")
+#plotBarChart(ages)
 #get road surface conditions
-roadSurfaces, roadSurfaces_pct = getDetailDF(inrangedf, roadSurfacedf, "ACCIDENT_NO", "Surface Cond Desc")
+#roadSurfaces, roadSurfaces_pct = getDetailDF(inrangedf, roadSurfacedf, "ACCIDENT_NO", "Surface Cond Desc")
 #get atmospheric conditions
-roadAtmospherics, roadAtmospherics_pct = getDetailDF(inrangedf, roadAtmosphericdf, "ACCIDENT_NO", "Atmosph Cond Desc")
+#roadAtmospherics, roadAtmospherics_pct = getDetailDF(inrangedf, roadAtmosphericdf, "ACCIDENT_NO", "Atmosph Cond Desc")
 
 
 # In[48]:
 
 #print(type(injuries))
-print(injuries1)
+#print(injuries1)
 #print(type(ages))
-print(ages)
-print(roadSurfaces)
-print(roadSurfaces_pct)
-print(roadAtmospherics)
-print(roadAtmospherics_pct)
+#print(ages)
+#print(roadSurfaces)
+#print(roadSurfaces_pct)
+#print(roadAtmospherics)
+#print(roadAtmospherics_pct)
 
 
 # In[ ]:

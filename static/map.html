@@ -28,6 +28,9 @@
       var atmospheric = {{atmospheric|tojson}};
       var directionsDisplay;
       var directionsService;
+      var directions;
+      var start_loc = [];
+      var end_loc = [];
 
       function initMap() {
         directionsDisplay = new google.maps.DirectionsRenderer;
@@ -44,7 +47,7 @@
         map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
 
 
-        getRoutesFromAddresses(start_pos, end_pos);
+        directions = getRoutesFromAddresses(start_pos, end_pos);
 
         //document.getElementById('start').addEventListener('change', onChangeHandler);
         //document.getElementById('end').addEventListener('change', onChangeHandler);
@@ -59,6 +62,11 @@
         }, function(response, status) {
           if (status === 'OK') {
             //alert("lat: " + response.routes[0].legs[0].steps[0].start_location.lat() + ", lng:" + response.routes[0].legs[0].steps[0].start_location.lng());
+            start_loc[0] = response.routes[0].legs[0].start_location.lat();
+            start_loc[1] = response.routes[0].legs[0].start_location.lng();
+            end_loc[0] = response.routes[0].legs[0].end_location.lat();
+            end_loc[1] = response.routes[0].legs[0].end_location.lng();
+
             directionsDisplay.setDirections(response);
             return response;
           } else {
