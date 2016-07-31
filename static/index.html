@@ -44,14 +44,14 @@
 
       <br/><br/>
       <div class="ui vertical"></div>
-
+      <form action="." method="post">
       <div class="ui form" id="location">
         <div class="ui massive icon input">
-          <input type="text" id="locationstart" placeholder="Start Location">
+          <input type="text" name="locationstart" id="locationstart" placeholder="Start Location">
         </div>
         <br/><br/>
         <div class="ui massive icon input">
-          <input type="text" id="locationend" placeholder="Destination">
+          <input type="text" name="locationend" id="locationend" placeholder="Destination">
         </div>
 
         <div class="ui center aligned grid" id="optionslist">
@@ -78,8 +78,9 @@
 
         </div>
         </div></br></br>
-        <button class="massive ui button" type="submit">Submit</button>
+        <button class="massive ui button" type="submit" value="Send">Submit</button>
       </div>
+      </form>
     </div>
     <br/><br/>
 

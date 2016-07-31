@@ -13,13 +13,27 @@
 # limitations under the License.
 
 import os
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template, redirect, request
+from os.path import abspath, dirname
 
-app = Flask(__name__)
+
+tmpl_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static')
+
+app = Flask(__name__,template_folder=tmpl_dir)
+
 
 @app.route('/')
-def Welcome():
-    return app.send_static_file('index.html')
+def index():
+    return render_template("index.html")
+    #return app.send_static_file('index.html')
+
+@app.route('/',methods=['POST'])
+def my_form_post():
+
+    start = request.form['locationstart']
+    end = request.form['locationend']
+    list = [start,end]
+    return jsonify(results=list)
 
 @app.route('/myapp')
 def WelcomeToMyapp():
