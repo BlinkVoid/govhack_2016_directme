@@ -2,6 +2,23 @@ function init() {
     // Init checkboxes
     $('.ui.checkbox')
     .checkbox();
+
+    $('#locationstart').on('input',function(e){
+        validateInputs();
+    });
+    $('#locationend').on('input',function(e){
+        validateInputs();
+    });
+}
+
+function validateInputs() {
+    // empty
+    if ($('#locationstart').val() == '' || $('#locationend').val() == '') {
+        $('#gobutton').prop("disabled", true);
+    }
+    else {
+        $('#gobutton').prop("disabled", false);
+    }
 }
 
 window.onload=init;
